@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Leave Status</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            width: 100%;
+            max-width: 330px;
+            padding: 15px;
+            margin: auto;
+        }
+        .container h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .container form {
+            margin-bottom: 15px;
+        }
+        .container button {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            cursor: pointer;
+        }
+        .history-btn {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .logout-btn {
+            background-color: #f44336;
+            color: white;
+        }
+        .back-btn {
+            background-color: #008CBA;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Leave Applied Successfully!</h1>
+        <form action="HistroyServlet" method="GET">
+            <button type="submit" class="history-btn">View History</button>
+        </form>
+        <form action="LogoutServlet" method="GET">
+            <button type="submit" class="logout-btn">Log Out</button>
+        </form>
+        <button onclick="history.back()" class="btn btn-info mb-2">Go Back</button>
+        
+        <!-- <form action="EmployeeHomePage.html" method="GET">
+            <button type="submit" class="back-btn">Back</button>
+        </form> -->
+        <div class="footer">
+        <p>LeaveFlow © 2024 </p>
+        </div>
+    </div>
+</body>
+</html>

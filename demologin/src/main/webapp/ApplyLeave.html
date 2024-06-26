@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Leave Application Form</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <style>
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding-top: 50px;
+        }
+        .btn {
+            width: 100%;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Leave Application Form</h1>
+        <form action="RegisterServlet" method="POST">
+            <div class="form-group">
+                <label for="leavetype">Type of Leave:</label>
+                <select class="form-control" id="leavetype" name="leavetype">
+                    <option value="Earned_Leave(EL)">Earned Leave (EL)</option>
+                    <option value="Casual_Leave">Casual Leave (CL)</option>
+                    <option value="Sick_Leave">Sick Leave (SL)</option>
+                    <option value="Leave_Without_Pay">Leave Without Pay (LWP)</option>
+                    <option value="Compensatory_Off">Compensatory Off (Comp_Off)</option>
+                    <option value="Maternity_Leave">Maternity Leave (ML)</option>
+                    <option value="Paternity_Leave">Paternity Leave (PL)</option>
+                    <option value="Bereavement_Leave">Bereavement Leave (BL)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="startdate">From date:</label>
+                <input type="date" class="form-control" id="startdate" name="startdate">
+            </div>
+            <div class="form-group">
+                <label for="enddate">To date:</label>
+                <input type="date" class="form-control" id="enddate" name="enddate">
+            </div>
+            <div class="form-group">
+                <label for="reason">Reason:</label>
+                <textarea class="form-control" id="reason" name="reason" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        <form action="LogoutServlet" method="get">
+            <button type="submit" class="btn btn-danger">Logout</button>
+        </form>
+        <button onclick="history.back()" class="btn btn-info mb-2">Go Back</button>
+        <!--'history.back()'-This JavaScript function instructs the browser to navigate back to the previous page in the history stack.-->
+        <div class="footer">
+        <p>LeaveFlow © 2024 </p>
+        </div>
+    </div>
+</body>
+</html>
