@@ -11,9 +11,15 @@ LeaveFlow is a web application that simplifies the management of employee leave 
 - **Admin Dashboard**: Manage employee details and view leave statistics.
 
 ## Technologies Used
-- **Backend**: Java, Java EE (JDBC)
+- **Backend**: Java, Jakarta EE(JDBC)
 - **Database**: MySQL
 - **Frontend**: HTML, CSS, JavaScript, Bootstrap
+
+## Development Tools
+- **Git**: Version control system for tracking changes in the source code.
+- **GitHub**: Hosting service for the Git repository and collaboration.
+- **Maven**: Build automation tool used for managing project dependencies.
+- **Eclipse EE**: Integrated development environment (IDE) used for development.
 
 ## Installation
 To set up and run LeaveFlow, follow these steps:
